@@ -1,0 +1,12 @@
+var server = require('./mod1.js');
+server.setGlobal(34);
+var val = server.returnGlobal();
+console.log(process.execPath);
+console.log(process.version);
+console.log(process.platform);
+var memory = process.memoryUsage();
+console.log(memory);
+var buf = new Buffer('string');
+console.log(buf);
+buf.write('new string');
+console.log(buf);
